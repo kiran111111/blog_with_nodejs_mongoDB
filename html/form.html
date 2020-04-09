@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Node Blog">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Kiran">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe-Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link  rel="stylesheet" type="text/css" href="./css/form.css">
+    <link  rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body>
+
+
+ 
+ <header>
+  <div class="navbar__container">
+   <div class="navbar__wrapper">
+    <div class="header__title-navbar--wrapper">
+     <div class="navbar__hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+     </div>
+      <div class="title">
+       <h3>Stanton</h3>
+      </div>
+
+      <div class="header__links">
+       <ul>
+        <li class="header__links--group">
+         <a href="./index.html">
+          <span>Blog</span>
+         </a>
+        </li>
+        <li class="header__links--group">
+         <a href="./blogPost.html">
+          <span>About</span>
+         </a>
+        </li>
+        <li class="header__links--group">
+         <a href="#">
+          <span>Contact</span>
+         </a>
+        </li>
+        <li class="header__links--group">
+         <a href="#">
+          <span>Shop</span>
+         </a>
+        </li>
+        <li class="header__links--group">
+          <a href="./form.html">
+           <span>Login</span>
+          </a>
+         </li>
+       </ul>
+      </div>
+     </div>
+      <div class="follow__links">
+       <ul>
+        <li class="follow__links--group">
+         <a href="./index.html">
+          <i class="fab fa-instagram"></i>
+         </a>
+        </li>
+        <li class="follow__links--group">
+         <a href="./blogPost.html">
+          <i class="fab fa-youtube"></i>
+         </a>
+        </li>
+        <li class="follow__links--group">
+         <a href="./form.html">
+          <i class="fab fa-twitter"></i>
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="cart">
+        <div class="cart__img">  <a href="#"><img  src="images/cart.svg"></a></div>
+        <!-- <div class="cart__quantity">1</div> -->
+      </div>
+   </div>
+
+   <div class="mobile__navbar">
+    <div class="header__links--mobile">
+     <ul>
+      <li class="header__links--group">
+       <a href="./index.html">
+        <span>Blog</span>
+       </a>
+      </li>
+      <li class="header__links--group">
+       <a href="./blogPost.html">
+        <span>About</span>
+       </a>
+      </li>
+      <li class="header__links--group">
+       <a href="#">
+        <span>Contact</span>
+       </a>
+      </li>
+      <li class="header__links--group">
+       <a href="#">
+        <span>Shop</span>
+       </a>
+      </li>
+     </ul>
+    </div>
+  
+    <div class="follow__links--mobile">
+     <ul>
+      <li class="follow__links--group">
+       <a href="#">
+        <i class="fab fa-instagram"></i>
+       </a>
+      </li>
+      <li class="follow__links--group">
+       <a href="#">
+        <i class="fab fa-youtube"></i>
+       </a>
+      </li>
+      <li class="follow__links--group">
+       <a href="#">
+        <i class="fab fa-twitter"></i>
+       </a>
+      </li>
+     </ul>
+    </div>
+  </div>
+  </div>
+  </header>
+
+ <h3 class="contact__head">Contact Form</h3>
+ 
+ <div class="container">
+   <form method="post" action="/action_page.php">
+     <label for="title">Title</label>
+     <input type="text" id="title" name="title" placeholder="Blog post name...">
+ 
+     <label for="date">Date </label>
+     <input type="text" id="date" name="date" placeholder="Today's date..">
+ 
+     <label for="name">Name</label>
+     <input type="text" id="date" name="date" placeholder="Today's date..">
+
+ 
+     <label for="description">Description</label>
+     <textarea id="desc" name="description" placeholder="Write something.." style="height:100px"></textarea>
+
+     <label for="content">Contents</label>
+     <textarea id="content" name="content" placeholder="Write something.." style="height:200px"></textarea>
+ 
+ 
+     <input type="submit" value="Submit">
+   </form>
+ </div>
+ 
+
+ <footer>
+  <section>
+    <div class="footer__wrapper">
+      <div class="footer__container">
+        <div class="footer__content">
+          <div class="footer__details">
+            <h3><span>Get the Low-down</span></h3>
+            <p>Sign up with your email address to receive news and updates.</p>
+            <form class="footer__form">
+              <input class="email" id="email" type="text"> </input>
+              <button type="submit">Submit</button>
+           </form>  
+          </div>
+        </div>
+        <div class="footer__links">
+         <ul>
+           <li class="footer__links--group">
+            <a href="#">
+             <i class="fab fa-instagram"></i>
+            </a>
+           </li>
+           <li class="footer__links--group">
+            <a href="#">
+             <i class="fab fa-youtube"></i>
+            </a>
+           </li>
+           <li class="footer__links--group">
+             <i class="fab fa-twitter"></i>
+            </a>
+           </li>
+          </ul>
+          <div class="footer__tag">
+           <p><span>Made with Love 💗</span></p>
+         </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+</footer>
+
+ </body>
+ </html>
+ 
