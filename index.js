@@ -11,7 +11,7 @@ const pug = require("pug");
 const ConnectDB = require("./config/db");
 // const port = process.env.PORT
 
-const port = 4000;
+const port = process.env.PORT;
 
 const bcrypt = require("bcrypt")
 
