@@ -1,0 +1,57 @@
+div.about__wrapper > div.about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 2rem;
+}
+
+div.about__wrapper > div.about__container > div.about__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+  padding: 2rem 0;
+}
+
+div.about__wrapper > div.about__container > div.about__content > h3 {
+  font-size: 2.5rem;
+  line-height: 2.4rem;
+  padding: 1rem;
+}
+
+div.about__wrapper > div.about__container > div.about__content > p {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+div.about__wrapper > div.about__container > div.about__image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+  padding: 2rem 0;
+}
+
+div.about__wrapper > div.about__container > div.about__image > img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 746px) {
+  div.about__wrapper > div.about__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0.5rem;
+  }
+  div.about__wrapper > div.about__container > div.about__content h3 {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=about.css.map */

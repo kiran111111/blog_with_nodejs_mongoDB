@@ -1,0 +1,94 @@
+header
+  .navbar__container
+    .navbar__wrapper
+      .header__title-navbar--wrapper
+        .navbar__hamburger
+          .bar
+          .bar
+          .bar
+        .title
+          h3 Stanton
+        .header__links
+          ul
+            if !user
+              li.header__links--group
+                a(href="/")
+                  span Blog
+              li.header__links--group
+                a(href='/about')
+                  span About
+              li.header__links--group
+                a(href='/contact')
+                  span Contact
+              li.header__links--group
+                a(href='/shop')
+                  span Shop
+              li.header__links--group
+                a(href='/register')
+                  span Register   
+            if user      
+              li.header__links--group
+                a(href='/form')
+                  span Post
+              li.header__links--group
+                a(href='/admin')
+                  span Admin  
+              li.header__links--group
+                a(href='/logout')
+                  span Logout      
+      .follow__links
+        ul
+          li.follow__links--group
+            a(href="#")
+              i.fab.fa-instagram
+          li.follow__links--group
+            a(href='#')
+              i.fab.fa-youtube
+          li.follow__links--group
+            a(href='#')
+              i.fab.fa-twitter
+      .cart
+        .cart__img
+          a(href='/shop/cart')
+            img(src='../../images/cart.svg')
+        // <div class="cart__quantity">1</div>
+    .mobile__navbar
+      .header__links--mobile
+        ul
+          if !user
+            li.header__links--group
+              a(href="/")
+                span Blog
+            li.header__links--group
+              a(href='/about')
+                span About
+            li.header__links--group
+              a(href='/contact')
+                span Contact
+            li.header__links--group
+              a(href='/shop')
+                span Shop
+            li.header__links--group
+              a(href='/register')
+                span Register   
+          if user      
+            li.header__links--group
+              a(href='/form')
+                span Post
+            li.header__links--group
+              a(href='/admin')
+                span Admin  
+            li.header__links--group
+              a(href='/logout')
+                span Logout      
+      .follow__links--mobile
+        ul
+          li.follow__links--group
+            a(href='#')
+              i.fab.fa-instagram
+          li.follow__links--group
+            a(href='#')
+              i.fab.fa-youtube
+          li.follow__links--group
+            a(href='#')
+              i.fab.fa-twitter

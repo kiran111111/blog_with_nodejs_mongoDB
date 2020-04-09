@@ -1,0 +1,14 @@
+extends layout.pug
+
+block content
+ .product__wrapper
+  .product__container
+    ul
+     each product in products
+      li.product__list
+        .product__image
+          a(href="/shop/"+product._id)
+            img(src=product.file)
+        .product__details
+          h3=product.title
+          p="$ "+product.price

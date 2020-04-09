@@ -1,0 +1,40 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='description' content='Node Blog')
+  meta(name='keywords' content='HTML,CSS,XML,JavaScript')
+  meta(name='author' content='Kiran')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Recipe-Blog
+  link(href='https://fonts.googleapis.com/css?family=Poppins&display=swap' rel='stylesheet')
+  link(rel='stylesheet' type='text/css' href='../../css/admin.css')
+  link(rel='stylesheet' type='text/css' href='../../css/styles.css')
+  link(rel='stylesheet' type='text/css' href='../../css/postStyles.css')
+
+
+include includes/header.pug
+
+block content
+ div.viewBlog__modal
+   div.viewBlog
+     h4= blog.title
+     div.viewBlog__access
+       a.btn.btn-info(href='/admin/view/edit/'+blog._id) Edit 
+       a.btn.btn-danger(href='/admin/view/delete/'+blog._id) Delete
+   div.viewBlog__details
+     span Date
+     p= blog.date
+     span Name
+     p= blog.name
+     span Description
+     p= blog.description
+     span Contents 
+     p= blog.content
+
+include includes/footer.pug
+script(src='../../js/index.js')
+script(src='https://kit.fontawesome.com/a076d05399.js')
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
+
+

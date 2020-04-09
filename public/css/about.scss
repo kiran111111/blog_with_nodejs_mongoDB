@@ -1,0 +1,46 @@
+
+div.about__wrapper {
+  >div.about__container {
+   display:flex;
+   flex-direction: row;
+   padding:2rem;
+    >div.about__content {
+     flex:1 0 40%;
+     padding:2rem 0;
+      >h3 {
+       font-size:2.5rem;
+       line-height: 2.4rem;
+       padding:1rem;
+      }
+      >p {
+      font-size: 1rem;
+      padding:1rem;
+      }
+    }
+    >div.about__image {
+     flex:1 0 40%;
+     padding:2rem 0;
+      >img {
+        width:100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width:746px){
+ div.about__wrapper {
+  >div.about__container {
+   display:flex;
+   flex-direction: column;
+   padding:0.5rem;
+   >div.about__content {
+   h3{
+    font-size: 2rem;
+   }
+  }
+  }
+ }
+}

@@ -1,0 +1,22 @@
+extends authLayout.pug
+
+
+
+block content
+
+ if errors
+  each error in errors
+   div.alert.alert-danger.m-4 #{error}
+ .auth__wrapper  
+  h3.authTitle Register
+  form.authForm(method="post" action="/register")
+    label(for='name') Name
+    input#name(type='text' name="name"  required)
+    label(for='username') Email address
+    input#username(type='email' name="username" aria-describedby='emailHelp' required)
+    label(for='exampleInputPassword1') Password
+    input#password(type='password' name="password" required)
+    button.btn(type='submit') Submit
+    br
+    span.authQues Already registered ?
+    a(href="/login")  Login

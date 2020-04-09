@@ -1,0 +1,38 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='description' content='Node Blog')
+  meta(name='keywords' content='HTML,CSS,XML,JavaScript')
+  meta(name='author' content='Kiran')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Recipe-Blog
+  link(href='https://fonts.googleapis.com/css?family=Poppins&display=swap' rel='stylesheet')
+  link(rel="stylesheet" type="text/css" href="../../css/contact.css")
+  link(rel='stylesheet' type='text/css' href='../../css/admin.css')
+  link(rel='stylesheet' type='text/css' href='../../css/styles.css')
+  link(rel='stylesheet' type='text/css' href='../../css/postStyles.css')
+  link(rel='stylesheet' type='text/css' href='../css/cart/shop.css')
+  link(rel='stylesheet' type='text/css' href='../../css/about.css')
+
+
+include includes/header.pug
+
+
+block messages
+  if locals.flashes
+    .inner
+      .flash-messages
+        - const categories = Object.keys(locals.flashes)
+        each category in categories
+          each message in flashes[category]
+            .flash(class=`flash--${category}`)
+              p.flash__text!= message
+              button.flash__remove(onclick="this.parentElement.remove()") &times;
+
+block content
+
+include includes/footer.pug
+
+include includes/base.pug
+
+include includes/scripts.pug

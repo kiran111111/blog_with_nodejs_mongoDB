@@ -1,0 +1,181 @@
+
+
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+ font-family:$main-font;
+}
+
+.navbar__container{
+ background-color: $background-color;
+}
+
+.navbar__wrapper  {
+//  border:1px solid black;
+ display:flex;
+ padding:1rem 0;
+ flex-wrap: wrap;
+ transition: 0.5s all ease;
+}
+
+.header__title-navbar--wrapper{
+ flex:1 0 50%;
+ flex-wrap: nowrap;
+ display: flex;
+}
+
+
+.navbar__hamburger{
+margin:0.50rem 1rem;
+display:none;
+&:hover{
+  cursor: pointer;
+}
+ .bar{
+  display: block;
+  width:2rem;
+  height:2px;
+  background-color:black;
+  margin:0.5rem;
+}
+}
+
+.title{
+padding:0.5rem 1.5rem;
+flex:1;
+font-size:1.5rem;
+font-weight:300;
+}
+
+
+.header__links{
+ flex:2;
+text-align: right;
+ padding:10px;
+ ul{
+  display:block;
+  li{
+   display:inline;
+   a{
+    padding:0.5rem;
+    text-decoration: none;
+    color:black;
+    font-weight:lighter;
+   }
+  }
+ }
+}
+
+
+
+.follow__links{
+
+ padding:0.5rem;
+ ul{
+  display:block;
+  li{
+   display:inline;
+   a{
+    padding:0.5rem;
+    text-decoration: none;
+    color:black;
+    font-weight:lighter;
+   }
+  }
+ }
+}
+
+.cart{
+ padding:0.5rem 1rem;
+
+}
+
+.cart img{
+ width:1.5rem;
+}
+
+.mobile__navbar{
+  display: none;
+ transition: 0.5s all ease;
+  
+}
+
+.show{
+
+ display:block;
+  
+}
+
+
+@media screen and (max-width:900px){
+
+ .title{
+  text-align: center;
+ }
+
+.header__links{
+ display: none;
+}
+
+.follow__links{
+ display: none
+}
+
+
+
+.navbar__hamburger{
+  display:block;
+}
+
+.mobile__navbar{
+//  opacity: 0.5; 
+ height:90vh;
+ text-align:center;
+ transition: 1s all ease;;
+//  transition: opacity 1s; 
+ .header__links--mobile{
+ 
+  padding:4rem;
+   .header__links--group{
+    padding:0.5rem;
+    list-style-type: none;
+    a{
+     padding:0.7rem;
+     font-size:1.7rem;
+     text-decoration: none;
+     color:black;
+     font-weight:lighter;
+    }
+   }
+ }
+
+
+ .mobile__navbar.fade{
+   opacity: 1;
+ }
+
+ 
+
+ .follow__links--mobile{
+  padding:2rem;
+  .follow__links--group{
+   display: inline;
+   a{
+    padding:0.5rem;
+    text-decoration: none;
+    color:black;
+    font-weight:lighter;
+    font-size:2rem;
+   }
+  }
+ }
+}
+
+
+.cart{
+  padding:1rem 1rem;
+ 
+ }
+
+}

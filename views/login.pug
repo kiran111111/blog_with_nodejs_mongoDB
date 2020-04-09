@@ -1,0 +1,21 @@
+extends authLayout.pug
+
+block content
+ if messageFailure
+  div.alert.alert-danger=messageFailure
+ .auth__wrapper 
+  h3.authTitle Login
+  form.authForm(method="post" action="/login")
+   label(for='username') Email address
+   input#username(type='email' name="username" aria-describedby='emailHelp' required)
+   small#emailHelp.form-text.text-muted We&apos;ll never share your email with anyone else.
+   label(for='exampleInputPassword1') Password
+   input#exampleInputPassword1.form-control(type='password' name="password")
+   button.btn.btn-primary(type='submit') Submit
+   a.container(href="/register") Register
+
+
+
+
+
+

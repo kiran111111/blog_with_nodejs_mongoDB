@@ -1,0 +1,146 @@
+
+// STYLES FOR THE LOGIN AND REGISTER PAGE-----------------
+
+
+.auth__wrapper{
+.authForm{
+ width:30vw;
+ margin:3rem auto;
+ padding:3rem;
+ box-shadow: 0px 0px 5px grey;
+ 
+ 
+ label{
+  display:block;
+  padding:0.5rem 0;
+  margin-bottom:0;
+ }
+ #name,#username,#password{
+  display:block;
+  border:1px solid pink;
+  border-radius: 10px;
+  padding:0.5rem;
+  width:100%;
+  margin-bottom:0.8rem;
+  &:focus,&:active{
+  
+   outline: none;
+  }
+ }
+ small{
+  display:block;
+ }
+ button{
+  margin:2rem auto;
+background-color: rgb(245, 102, 126);
+ }
+ .authQues{
+padding:1rem 0;
+ }
+
+}
+
+.authTitle{
+ padding:1rem;
+}
+
+}
+
+@media screen and (max-width:800px){
+
+.auth__wrapper{
+  height:80vh;
+ .authForm{
+  width:50vw;
+  padding:1rem;
+  box-shadow: 0px 0px 5px grey;
+  .authTitle{
+   padding:1rem;
+   color:rgb(248, 82, 110);
+   }
+ }
+}
+ 
+}
+
+
+@media screen and (max-width:600px){
+
+  .auth__wrapper{
+   
+ .authForm{
+  width:90vw;
+  padding:1rem;
+  box-shadow: 0px 0px 5px grey;
+  .authTitle{
+   padding:1rem;
+   color:rgb(248, 82, 110);
+ }
+}
+ }
+ 
+}
+
+
+
+
+
+// MAIN PAGE STYLES AFTER LOGIN AND REGISTRATION---------
+
+.auth{
+ height:70vh;
+ .manage__wrapper{
+  
+  color:#fff;
+  padding:2rem;
+  
+  h3{
+   background-image: url(https://media.giphy.com/media/fVbGtoawNMG92bjN5E/giphy.gif);
+	background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+-webkit-background-clip: text;
+ font-size: 4rem;
+ font-weight:bold;
+	margin: 10px 0;
+  }
+ }
+ .manage__title{
+  text-transform: uppercase;
+ }
+ .manage__message{
+  
+  font-size:2.5rem;
+ }
+}
+
+
+@media screen and (max-width:600px){
+  .auth{
+    height:70vh;
+    .manage__wrapper{
+     
+     color:#fff;
+     padding:2rem;
+     
+     h3{
+      background-image: url(https://media.giphy.com/media/fVbGtoawNMG92bjN5E/giphy.gif);
+      background-size: cover;
+      color: transparent;
+      -moz-background-clip: text;
+      -webkit-background-clip: text;
+      text-transform: uppercase;
+      font-size: 4rem;
+      line-height: .75;
+      margin: 10px 0;
+     }
+    }
+    .manage__title{
+     text-transform: uppercase;
+    }
+    .manage__message{
+     
+     font-size:1rem;
+    }
+   }
+}

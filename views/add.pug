@@ -1,0 +1,20 @@
+extends layout.pug
+
+block content
+ h3.contact__head New BlogPost Form
+ .container.addPostForm
+   form(method='post' action='/form' enctype="multipart/form-data" )
+     label(for='title') Title
+     input#title(type='text' name='title' placeholder='Blog post name...')
+     label(for='date') Date 
+     input#date(type='date' name='date' placeholder="Today's date..")
+     label(for="file") Choose File
+     input(type="file" name="file" placeholder="Choose File" accept="image/png, image/jpeg")
+     label(for='name') Name
+     input#name(type='text' name='name' placeholder="Your Name..")
+     label(for='description') Description
+     input#desc(name='description' ,type='text' ,placeholder='Write something..' )
+     label(for='content') Contents
+     textarea#content(name='content' ,type='text', placeholder='Write something..')
+     input(type='submit' value='Submit')
+

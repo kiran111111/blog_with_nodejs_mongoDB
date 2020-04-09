@@ -1,0 +1,41 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='description' content='Node Blog')
+  meta(name='keywords' content='HTML,CSS,XML,JavaScript')
+  meta(name='author' content='Kiran')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Recipe-Blog
+  link(href='https://fonts.googleapis.com/css?family=Poppins&display=swap' rel='stylesheet')
+  //- link(rel='stylesheet' type='text/css' href='../public/css/form.css')
+  //- link(rel='stylesheet' type='text/css' href='../public/css/styles.css')
+  link(href='../css/postStyles.css' rel='stylesheet' type='text/css' media="all")
+include includes/header.pug
+
+
+block content
+ section
+   .post__wrapper
+     .post__container
+       .post__user
+         p.post__date=new Date(viewBlog.date)
+         p --
+         p.post__name=viewBlog.name
+       .post__title
+         h1=viewBlog.title
+       .post__description
+         img.post__image(src=viewBlog.file)
+         .post__content
+           p=viewBlog.content
+     .comments
+       .comment__box
+         h3 Comments
+         textarea.comment__area(name='comment')
+         br
+         button.comment__button Submit
+
+
+
+
+include includes/footer.pug
+include includes/scripts.pug

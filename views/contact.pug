@@ -1,0 +1,34 @@
+extends authLayout.pug
+
+
+block content
+ .contact__wrapper
+   .contact__container
+     .contact__details
+       h3
+         span Get in touch
+       p
+         | Stripe is an always-improving toolchain that gains new features every month. Our world-class
+         | engineering team constantly iterates upon every facet of the Stripe stack. And from Apple Pay to
+         | Alipay, building on Stripe means you get early access to the latest technologies.We help power
+         | millions of businesses in 100+ countries and across nearly every industry. Headquartered
+         | in San Francisco, Stripe has 14 global offices and hundreds of people working to help
+         | transform how modern businesses are built and run.
+       p.address
+         | kiranworld@gmail.com
+         br
+         |       (437)-227-2796
+       p.address
+         | 123 Demo Street
+         br
+         | New York NY12RG
+     .contact__form
+       form
+        label(for='name') Name
+        input#name(type='text' name='firstname' placeholder="First Name")
+        input#name(type='text' name='lastname' placeholder="Last Name")
+        label(for='email') Email
+        input#content(name='email' ,type='text', placeholder='Write something..')
+        label(for='description') Description
+        textarea#desc(name='description' ,type='text' ,placeholder='Write something..' )
+        input(type='submit' value='Submit')

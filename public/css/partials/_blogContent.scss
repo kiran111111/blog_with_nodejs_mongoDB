@@ -1,0 +1,290 @@
+
+*{
+ margin:0;
+ padding:0;
+}
+
+
+// Content Area
+
+.content__wrapper{
+ background-color: $background-color;
+ padding:4rem 0;
+ .content{
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  .content__image{
+   flex:1 ;
+   margin:1rem 3rem;
+   
+   text-align: center;
+   img{
+    max-width:95%;
+    height: auto;
+   }
+  }
+  .content__description{
+   
+  flex:1 ;
+  padding:0rem  4rem ;
+   h2{
+     padding:2rem 0 ;
+
+   }
+   p{
+     width:90%;
+     text-align: left;
+     padding:2rem 0;
+     font-size:2rem;
+     font-weight: bold;
+     
+   }
+  }
+ }
+}
+
+// Area at 996 px------
+@media screen and (max-width:996px){
+.content__wrapper{
+  .content{
+  .content__description{
+   flex:1 ;
+   padding:0rem  4rem ;
+  h2{
+    padding: 1rem 0 ;
+    font-size: 1.1rem;
+  }
+  p{
+    width:90%;
+    text-align: left;
+    padding: 0;
+    font-size:1.5rem;
+    font-weight: bold;
+    }
+   }
+  }
+ }
+}
+
+
+
+// Area at 786px--------
+@media screen and (max-width:786px){
+ .content__wrapper{
+  padding:1rem;
+.content{
+ .content__image{
+  flex:1 ;
+  margin:1rem 2rem; 
+  text-align: center;
+  img{
+   max-width:100%;
+   height: auto;
+  }
+ }
+ .content__description{
+    flex:1 ;
+    padding:0rem  2rem ;
+  h2{
+    padding: 1rem 0 ;
+   }
+  p{
+    width:90%;
+    text-align: left;
+    padding: 0;
+    font-size:1.3rem;
+    font-weight: bold;
+     }
+    }
+   }
+  }
+}
+
+
+// Area at 566px----------
+@media screen and (max-width:566px){
+ .content__wrapper{
+  padding:1rem;
+.content{
+ flex-direction:column;
+ .content__image{
+  flex:1 ;
+  margin:1rem 0rem;
+  text-align: center;
+  img{
+   max-width:100%;
+   height: auto;
+  }
+ }
+
+ .content__description{
+    flex:1 ;
+    padding:0rem  0rem ;
+  h2{
+    padding: 1rem 0 ;
+  }
+  p{
+    width:100%;
+    text-align: left;
+    padding: 0;
+    font-size:1.3rem;
+    font-weight: bold;
+     }
+    }
+   }
+  }
+}
+
+
+// Blog Intro Area-------
+
+.blog__intro--wrapper{
+
+margin:1.5rem;
+text-align: center;
+ .blog__intro{
+   width:70%;
+   margin:0 auto;
+  h2{
+   padding:2rem 0;
+    color:$pink-color;
+    font-size:2rem;
+  }
+  p{
+  color:black;
+  font-weight: lighter;
+  }
+ }
+}
+
+// Area at 546px
+
+@media screen and (max-width:546px){
+ .blog__intro--wrapper{
+
+  margin:0rem;
+  text-align: center;
+   .blog__intro{
+     width:90%;
+     margin:0 auto;
+    h2{
+     padding:2rem 0;
+      color:$pink-color;
+      font-size:2rem;
+    }
+    p{
+    color:black;
+    font-weight: lighter;
+    }
+   }
+  }
+}
+
+
+// Blog Post -----------------------------
+
+
+.blog__post--wrapper{
+  padding:4rem 0;
+  margin:2rem;
+
+  } 
+.blog__post--grid{
+    column-count: 3;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 2rem;
+    // margin-top: 2rem;
+    overflow: hidden;
+
+ .blog__post{
+    width: 100%; 
+    height: auto;
+    transition: 500ms;
+    margin-bottom: 2.5rem;
+    page-break-inside: avoid; /* For Firefox. */
+    -webkit-column-break-inside: avoid; /* For Chrome & friends. */
+    break-inside: avoid; /* For standard browsers like IE. :-) */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    .blog__image{
+      img{
+       height:auto;
+       width:100%;
+      }
+    }
+    .blog__details{
+      text-align: left;;
+      margin:32px 0px;
+      margin-top: 0.5rem;
+      width:100%;
+      .blog__date{
+        padding:0.3rem 0;
+      }
+      .blog__title{
+      color:$pink-color;
+       padding:0.3rem 0;
+      }
+      .blog__description{
+       padding:0.3rem 0;
+      }
+      .blog__page{
+       padding:0.3rem 0;
+        a{
+         color:$pink-color;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:766px){
+  .blog__post--wrapper{
+    padding:4rem 0;
+    margin:1.5rem;
+  .blog__post--grid{
+      column-count: 2;
+      -webkit-column-gap: 10px;
+      -moz-column-gap: 10px;
+      column-gap: 2rem;
+      overflow: hidden;
+    }
+  }
+}
+
+
+@media screen and (max-width:512px){
+  .blog__post--wrapper{
+    padding:4rem 0;
+    margin:0.5rem;
+  .blog__post--grid{
+      column-count: 1;
+      -webkit-column-gap: 10px;
+      -moz-column-gap: 10px;
+      column-gap: 0.5em;
+      // margin-top: 2rem;
+      overflow: hidden;
+      .blog__post{
+        width: 100%; 
+        height: auto;
+        transition: 500ms;
+        margin-bottom: 1.8rem;
+        page-break-inside: avoid; /* For Firefox. */
+        -webkit-column-break-inside: avoid; /* For Chrome & friends. */
+        break-inside: avoid; /* For standard browsers like IE. :-) */
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+
+
+
+
+  

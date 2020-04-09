@@ -1,0 +1,38 @@
+extends layout.pug
+
+block content
+ main
+   section
+     .content__wrapper
+       .content
+         .content__image
+           img(src='images/spoons.jpg ' alt='The spoons')
+         .content__description
+           h2 Stanfod Food and Recipes
+           p
+             | With the hyper-convenience of modern life, many of us can only operate a microwave.
+             | A home-cooked meal is not a luxury, anyone can do it!
+   section
+     .blog__intro--wrapper
+       .blog__intro
+         h2 Recent Posts
+         p
+           | We are ready to show you our blog in the given area below.
+           | eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+   section
+     .blog__post--wrapper
+       .blog__post--grid
+         each blog in blogList
+          .blog__post
+            .blog__image
+              img(src=blog.file)
+            .blog__details
+              .blog__date
+                span=blog.date
+              .blog__title
+                h3=blog.title
+              .blog__description
+                p=blog.description
+              .blog__page
+                a(href='/post/'+blog._id) Read More
+          

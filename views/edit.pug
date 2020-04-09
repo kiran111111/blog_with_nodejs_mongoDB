@@ -1,0 +1,42 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='description' content='Node Blog')
+  meta(name='keywords' content='HTML,CSS,XML,JavaScript')
+  meta(name='author' content='Kiran')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Recipe-Blog
+  link(href='https://fonts.googleapis.com/css?family=Poppins&display=swap' rel='stylesheet')
+  link(rel='stylesheet' type='text/css' href='../../../css/admin.css')
+  link(rel='stylesheet' type='text/css' href='../../../css/styles.css')
+  link(rel='stylesheet' type='text/css' href='../../../css/postStyles.css')
+
+
+include includes/header.pug
+
+
+block content
+ h3.contact__head Update BlogPost Form
+ .container
+   form(method='post' action='/admin/view/edit/'+blog._id enctype="multipart/form-data")
+     label(for='title') Title
+     input#title(type='text' ,name='title', placeholder='Blog post name...',value=blog.title)
+     label(for='date') Date 
+     input#date(type='date' ,name='date', placeholder="Today's date..",value=blog.date)
+     label(for="file") Choose File
+     input(type="file" name="file", placeholder="Choose File" ,value=blog.file,accept="image/png, image/jpeg")
+     label(for='name') Name
+     input#name(type='text' ,name='name', placeholder="Your Name.." ,value=blog.name)
+     label(for='description') Description
+     input#desc(type="text" ,name='description' ,placeholder='Write something..',value=blog.description)
+     label(for='content') Contents
+     input#content(type="text", name='content', placeholder='Write something..' ,value=blog.content)
+     input(type='submit' value='Submit')
+
+ 
+
+include includes/footer.pug
+script(src='../../../js/index.js')
+script(src='https://kit.fontawesome.com/a076d05399.js')
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')

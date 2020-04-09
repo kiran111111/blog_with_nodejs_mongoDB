@@ -1,0 +1,128 @@
+.auth__wrapper .authForm {
+  width: 30vw;
+  margin: 3rem auto;
+  padding: 3rem;
+  -webkit-box-shadow: 0px 0px 5px grey;
+          box-shadow: 0px 0px 5px grey;
+}
+
+.auth__wrapper .authForm label {
+  display: block;
+  padding: 0.5rem 0;
+  margin-bottom: 0;
+}
+
+.auth__wrapper .authForm #name, .auth__wrapper .authForm #username, .auth__wrapper .authForm #password {
+  display: block;
+  border: 1px solid pink;
+  border-radius: 10px;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 0.8rem;
+}
+
+.auth__wrapper .authForm #name:focus, .auth__wrapper .authForm #name:active, .auth__wrapper .authForm #username:focus, .auth__wrapper .authForm #username:active, .auth__wrapper .authForm #password:focus, .auth__wrapper .authForm #password:active {
+  outline: none;
+}
+
+.auth__wrapper .authForm small {
+  display: block;
+}
+
+.auth__wrapper .authForm button {
+  margin: 2rem auto;
+  background-color: #f5667e;
+}
+
+.auth__wrapper .authForm .authQues {
+  padding: 1rem 0;
+}
+
+.auth__wrapper .authTitle {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .auth__wrapper {
+    height: 80vh;
+  }
+  .auth__wrapper .authForm {
+    width: 50vw;
+    padding: 1rem;
+    -webkit-box-shadow: 0px 0px 5px grey;
+            box-shadow: 0px 0px 5px grey;
+  }
+  .auth__wrapper .authForm .authTitle {
+    padding: 1rem;
+    color: #f8526e;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .auth__wrapper .authForm {
+    width: 90vw;
+    padding: 1rem;
+    -webkit-box-shadow: 0px 0px 5px grey;
+            box-shadow: 0px 0px 5px grey;
+  }
+  .auth__wrapper .authForm .authTitle {
+    padding: 1rem;
+    color: #f8526e;
+  }
+}
+
+.auth {
+  height: 70vh;
+}
+
+.auth .manage__wrapper {
+  color: #fff;
+  padding: 2rem;
+}
+
+.auth .manage__wrapper h3 {
+  background-image: url(https://media.giphy.com/media/fVbGtoawNMG92bjN5E/giphy.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.auth .manage__title {
+  text-transform: uppercase;
+}
+
+.auth .manage__message {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .auth {
+    height: 70vh;
+  }
+  .auth .manage__wrapper {
+    color: #fff;
+    padding: 2rem;
+  }
+  .auth .manage__wrapper h3 {
+    background-image: url(https://media.giphy.com/media/fVbGtoawNMG92bjN5E/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 4rem;
+    line-height: .75;
+    margin: 10px 0;
+  }
+  .auth .manage__title {
+    text-transform: uppercase;
+  }
+  .auth .manage__message {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=auth.css.map */

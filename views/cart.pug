@@ -1,0 +1,72 @@
+
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='description' content='Node Blog')
+  meta(name='keywords' content='HTML,CSS,XML,JavaScript')
+  meta(name='author' content='Kiran')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Recipe-Blog
+  link(href='https://fonts.googleapis.com/css?family=Poppins&display=swap' rel='stylesheet')
+  link(rel='stylesheet' type='text/css' href='../css/admin.css')
+  link(rel='stylesheet' type='text/css' href='../css/postStyles.css')
+  link(rel='stylesheet' type='text/css' href='../css/styles.css')
+  link(rel='stylesheet' type='text/css' href='../css/about.css')
+  link(rel='stylesheet' type='text/css' href='../css/cart/shop.css')
+
+
+include includes/header.pug
+
+block messages
+  if locals.flashes
+    .inner
+      .flash-messages
+        - const categories = Object.keys(locals.flashes)
+        each category in categories
+          each message in flashes[category]
+            .flash(class=`flash--${category}`)
+              p.flash__text!= message
+              button.flash__remove(onclick="this.parentElement.remove()") &times;
+
+
+
+
+block content
+ .cart__container
+   .cart__wrapper
+     .cart__title
+       h3 Your Cart
+       h6
+        a(href="/shop/cart/empty") Empty
+     - var CARTON = CART    
+     if CARTON  
+      .cartTable
+        .cartTable__labels
+            .cartTable__itemLabel
+              span ITEM
+            .cartTable__itemQuantity
+              span QTY.
+            .cartItem__price
+              span PRICE.
+        each cart in CARTON.items
+          .cartTableRow
+            span.cartTableRow__itemRemove
+              button(title='removeItem')
+                span
+                  a(href="/shop/cart/remove/"+cart.item) x
+            .cartTableRow__itemDesc=cart.title
+            .cartTableRow__itemQuantity
+              span=cart.qty
+            .cartTableRow__itemPrice
+              span="$"+cart.price+".00"
+        .cartTable__total
+          span.cartTable__totalLabel Subotal : 
+          span.cartTable__totalPrice="$ "+CART.total+".00"   
+     else    
+      .cart__empty
+        h3 Your shoppingcart is Empty
+
+
+include includes/footer.pug
+include includes/scripts.pug
+     

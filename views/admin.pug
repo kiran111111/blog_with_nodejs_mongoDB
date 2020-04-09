@@ -1,0 +1,11 @@
+extends layout.pug
+
+block content
+ h3.allBlogs__title All Blogs
+ .allBlogs
+  ul
+   each blog in allBlogs
+    li.allBlogs__list
+     a(href='/admin/view/'+blog._id)=blog.title
+
+

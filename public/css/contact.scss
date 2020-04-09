@@ -1,0 +1,52 @@
+
+.contact__wrapper{
+ .contact__container{
+  padding-top:5rem;
+  width:45vw;
+  margin:0 auto;
+  .contact__details{
+   padding:0.5rem;
+   h3{
+    font-size:2rem;
+    font-weight: bold;
+    padding-bottom:2rem;
+   }
+   p.address{
+    font-weight: bold;
+   }
+  }
+  .contact__form{
+    padding:0.5rem;
+    form{
+     padding:2rem 0;
+     input,textarea{
+      border: 1px solid rgb(224, 88, 111);
+      border-radius:0;
+     }
+     input[type="submit"]{
+      background-color: rgb(238, 57, 87);;
+     }
+    }
+  }
+ }
+}
+
+
+@media screen and (max-width:924px){
+ .contact__wrapper{
+  .contact__container{
+   padding-top:5rem;
+   width:80vw;
+   margin:0 auto;}
+  }
+}
+
+
+@media screen and (max-width:548px){
+ .contact__wrapper{
+  .contact__container{
+   padding-top:5rem;
+   width:95vw;
+   margin:0 auto;}
+  }
+}

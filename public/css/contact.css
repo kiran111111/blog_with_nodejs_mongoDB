@@ -1,0 +1,53 @@
+.contact__wrapper .contact__container {
+  padding-top: 5rem;
+  width: 45vw;
+  margin: 0 auto;
+}
+
+.contact__wrapper .contact__container .contact__details {
+  padding: 0.5rem;
+}
+
+.contact__wrapper .contact__container .contact__details h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+.contact__wrapper .contact__container .contact__details p.address {
+  font-weight: bold;
+}
+
+.contact__wrapper .contact__container .contact__form {
+  padding: 0.5rem;
+}
+
+.contact__wrapper .contact__container .contact__form form {
+  padding: 2rem 0;
+}
+
+.contact__wrapper .contact__container .contact__form form input, .contact__wrapper .contact__container .contact__form form textarea {
+  border: 1px solid #e0586f;
+  border-radius: 0;
+}
+
+.contact__wrapper .contact__container .contact__form form input[type="submit"] {
+  background-color: #ee3957;
+}
+
+@media screen and (max-width: 924px) {
+  .contact__wrapper .contact__container {
+    padding-top: 5rem;
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 548px) {
+  .contact__wrapper .contact__container {
+    padding-top: 5rem;
+    width: 95vw;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
