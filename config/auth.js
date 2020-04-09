@@ -5,8 +5,9 @@ const mongoose = require("mongoose");
 
 // @Set up the URI as an env variable----
 // const db = process.env.mongoURI;
-const db = "mongodb+srv://kiran:kiran@cluster0-zrsby.mongodb.net/test?retryWrites=true&w=majority";
+const db = process.env.mongoURI;
 
+// mongoURI=mongodb+srv://kiran:kiran@cluster0-zrsby.mongodb.net/test?retryWrites=true&w=majority
 
 const ConnectDB = async ()=>{
   try{
