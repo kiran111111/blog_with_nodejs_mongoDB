@@ -26,7 +26,6 @@ const validate = (req, res, next) => {
  res.locals.errors = extractedErrors;
  res.render("register")
 
-
 }
 
 module.exports = {

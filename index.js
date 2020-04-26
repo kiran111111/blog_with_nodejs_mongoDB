@@ -49,7 +49,7 @@ app.set("views",path.join(__dirname,"./views"))
 
 
 // Middleware for the session 
-
+app.use(cookieParser());
 app.set('trust proxy', 1) // trust first proxy
 
 app.use(session({
@@ -59,7 +59,7 @@ app.use(session({
  })
 )
 
-app.use(cookieParser());
+
 // Express Messages Middleware
 app.use(flash());
 app.use(function (req, res, next) {
