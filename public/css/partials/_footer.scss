@@ -3,6 +3,8 @@
 // Footer -----------------------------------------
 
 .footer__wrapper{
+  position: relative;
+  top:4rem;
  .footer__container{
    background-color: $background-color;
    padding:5rem 0;
@@ -93,27 +95,31 @@
 }
 
 
+// Mobile footer
 
-.footer__links{
-  background-color: $background-color;
-  text-align: center;
-  margin:0 auto;
-  padding:0.5rem;
-  ul{
-   display:block;
-   li{
-    display:inline;
-    font-size: 1.5rem;
-    a{
-     padding:0.5rem;
-     text-decoration: none;
-     color:black;
-     font-weight:lighter;
-    }
-   }
-  }
 
-  .footer__tag{
-    padding:0.5rem;
-  }
- }
+// .footer__links{
+//   position: relative;
+//   top:10rem;
+//   background-color:pink;
+//   text-align: center;
+//   margin:0 auto;
+//   padding:0.5rem;
+//   ul{
+//    display:block;
+//    li{
+//     display:inline;
+//     font-size: 1.5rem;
+//     a{
+//      padding:0.5rem;
+//      text-decoration: none;
+//      color:black;
+//      font-weight:lighter;
+//     }
+//    }
+//   }
+
+//   .footer__tag{
+//     padding:0.5rem;
+//   }
+//  }
