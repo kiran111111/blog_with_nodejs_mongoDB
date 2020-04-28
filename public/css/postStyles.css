@@ -474,6 +474,11 @@
   }
 }
 
+.footer__wrapper {
+  position: relative;
+  top: 4rem;
+}
+
 .footer__wrapper .footer__container {
   background-color: #fdf0e6;
   padding: 5rem 0;
@@ -564,10 +569,12 @@
 }
 
 .footer__links {
+  position: relative;
+  top: 20rem;
   background-color: #fdf0e6;
   text-align: center;
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
 }
 
 .footer__links ul {
