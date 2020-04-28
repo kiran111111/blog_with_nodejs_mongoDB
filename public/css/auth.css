@@ -1,3 +1,7 @@
+.auth__wrapper {
+  margin-bottom: 10rem;
+}
+
 .auth__wrapper .authForm {
   width: 30vw;
   margin: 3rem auto;

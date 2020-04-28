@@ -4,7 +4,7 @@
 
 .footer__wrapper{
   position: relative;
-  top:4rem;
+  top:0rem;
  .footer__container{
    background-color: $background-color;
    padding:5rem 0;
@@ -100,7 +100,7 @@
 
 .footer__links{
   position: relative;
-  top:20rem;
+  bottom:0;
   background-color:$background-color;
   text-align: center;
   margin:0 auto;

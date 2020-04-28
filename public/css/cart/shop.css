@@ -174,7 +174,7 @@
 
 .footer__wrapper {
   position: relative;
-  top: 4rem;
+  top: 0rem;
 }
 
 .footer__wrapper .footer__container {
@@ -268,7 +268,7 @@
 
 .footer__links {
   position: relative;
-  top: 20rem;
+  bottom: 0;
   background-color: #fdf0e6;
   text-align: center;
   margin: 0 auto;
