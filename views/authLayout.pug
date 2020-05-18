@@ -20,29 +20,26 @@ head
   
 
 
+.page__container
+  include includes/header.pug
 
-include includes/header.pug
+  != messages('messages',locals)
 
-
-
-
-!= messages('messages',locals)
-
-block messages
-  if locals.flashes
-    .inner
-      .flash-messages
-        - const categories = Object.keys(locals.flashes)
-        each category in categories
-          each message in flashes[category]
-            .flash(class=`flash--${category}`)
-              p.flash__text!= message
-              button.flash__remove(onclick="this.parentElement.remove()") &times;
+  block messages
+    if locals.flashes
+      .inner
+        .flash-messages
+          - const categories = Object.keys(locals.flashes)
+          each category in categories
+            each message in flashes[category]
+              .flash(class=`flash--${category}`)
+                p.flash__text!= message
+                button.flash__remove(onclick="this.parentElement.remove()") &times;
 
 
 
-block content
- 
-include includes/base.pug
+  block content
+  
+  include includes/base.pug
 
-include includes/scripts.pug
+  include includes/scripts.pug

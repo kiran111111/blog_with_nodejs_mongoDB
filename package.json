@@ -4,7 +4,7 @@
   "description": "It is food blog",
   "main": "1",
   "scripts": {
-    "start": "node index"
+    "start": "nodemon index"
   },
   "keywords": [
     "abc"

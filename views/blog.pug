@@ -17,8 +17,8 @@ block content
        .blog__intro
          h2 Recent Posts
          p
-           | We are ready to show you our blog in the given area below.
-           | eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+           | Find our favorite healthy recipes and cooking tips from the best cookbooks, food blogs, and websites to make cooking faster and easier.
+           | 
    section
      .blog__post--wrapper
        .blog__post--grid
@@ -28,7 +28,7 @@ block content
               img(src=blog.file)
             .blog__details
               .blog__date
-                span=blog.date
+                span=blog.date.toLocaleString()
               .blog__title
                 h3=blog.title
               .blog__description

@@ -13,7 +13,7 @@ router.get("/",checkNotAuthenticated ,async (req,res)=>{
  try{
  await Blog.find({},(err,docs)=>{
    if(err){
-    console.log(err)
+    throw err;
    }
    else{
      res.locals.blogList = docs;
@@ -23,7 +23,7 @@ router.get("/",checkNotAuthenticated ,async (req,res)=>{
  }
  catch(err){
    if(err){
-    console.log(err)
+    throw err;
    }
   }
 })
@@ -92,7 +92,7 @@ file.mv(uploadDir+filename,(err)=>{
   })
  }catch(err){
   if(err){
-   console.log(err);
+   throw err;
   }
  }
 }  
@@ -109,7 +109,7 @@ router.get("/post/:id",async(req,res)=>{
  try{
  await Blog.findById(req.params.id,(err,docs)=>{
   if(err){
-   console.log(err)
+   throw err;
    }
    else{
     res.locals.viewBlog = docs;
@@ -129,7 +129,7 @@ router.get("/admin",async (req,res)=>{
  try{
   await Blog.find({},(err,docs)=>{
     if(err){
-     console.log(err)
+     throw err;
     }
     else{
       res.locals.allBlogs = docs;
@@ -139,7 +139,7 @@ router.get("/admin",async (req,res)=>{
   }
   catch(err){
     if(err){
-     console.log(err)
+     throw err;
     }
    }
 })

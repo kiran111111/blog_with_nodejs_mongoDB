@@ -42,7 +42,7 @@ authRouter.post("/register",checkNotAuthenticated, userValidationRules(),validat
    console.log(err)
   }
    else if(docs){
-    req.flash("danger","Username already exists");
+    req.flash("danger","Username already exists,please use another Email ");
     res.redirect("/register");
    }else{
     try{

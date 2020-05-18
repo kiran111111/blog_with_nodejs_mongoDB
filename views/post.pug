@@ -18,7 +18,7 @@ block content
    .post__wrapper
      .post__container
        .post__user
-         p.post__date=new Date(viewBlog.date)
+         p.post__date=new Date(viewBlog.date).toLocaleString()
          p --
          p.post__name=viewBlog.name
        .post__title

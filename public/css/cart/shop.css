@@ -6,6 +6,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+.page__container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .navbar__container {
   background-color: #fdf0e6;
 }
@@ -271,6 +276,7 @@
   bottom: 0;
   background-color: #fdf0e6;
   text-align: center;
+  width: 100%;
   margin: 0 auto;
   padding: 1rem 0.5rem;
 }
@@ -293,6 +299,65 @@
 
 .footer__links .footer__tag {
   padding: 0.5rem;
+}
+
+.auth__links {
+  position: relative;
+  overflow-x: hidden;
+  bottom: -100px;
+  background-color: #fdf0e6;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0.5rem;
+}
+
+.auth__links ul {
+  display: block;
+}
+
+.auth__links ul li {
+  display: inline;
+  font-size: 1.5rem;
+}
+
+.auth__links ul li a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
+}
+
+.auth__links .footer__tag {
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .auth__links {
+    position: relative;
+    bottom: -100px;
+    background-color: #fdf0e6;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0.5rem;
+  }
+  .auth__links ul {
+    display: block;
+  }
+  .auth__links ul li {
+    display: inline;
+    font-size: 1.5rem;
+  }
+  .auth__links ul li a {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+  }
+  .auth__links .footer__tag {
+    padding: 0.5rem;
+  }
 }
 
 .product__wrapper {

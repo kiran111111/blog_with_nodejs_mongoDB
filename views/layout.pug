@@ -15,25 +15,24 @@ head
   link(rel='stylesheet' type='text/css' href='../css/cart/shop.css')
   link(rel='stylesheet' type='text/css' href='../../css/about.css')
 
+.page__container(style="max-width:1280px;margin: 0 auto")
+  include includes/header.pug
 
-include includes/header.pug
+
+  block messages
+    if locals.flashes
+      .inner
+        .flash-messages
+          - const categories = Object.keys(locals.flashes)
+          each category in categories
+            each message in flashes[category]
+              .flash(class=`flash--${category}`)
+                p.flash__text!= message
+                button.flash__remove(onclick="this.parentElement.remove()") &times;
+
+  block content
+
+  include includes/footer.pug
 
 
-block messages
-  if locals.flashes
-    .inner
-      .flash-messages
-        - const categories = Object.keys(locals.flashes)
-        each category in categories
-          each message in flashes[category]
-            .flash(class=`flash--${category}`)
-              p.flash__text!= message
-              button.flash__remove(onclick="this.parentElement.remove()") &times;
-
-block content
-
-include includes/footer.pug
-
-include includes/base.pug
-
-include includes/scripts.pug
+  include includes/scripts.pug
