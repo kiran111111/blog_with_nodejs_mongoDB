@@ -16,6 +16,7 @@ const ConnectDB = async ()=>{
      })
      console.log(' Connected to Mongo Database ')
   }catch(err){
+    console.log(err)
    console.log("Error occured in connecting to the database");
    process.exit(1);
   }
